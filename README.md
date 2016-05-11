@@ -25,3 +25,9 @@ for l in range(len(y0)):
 ```
 This turns the sequence into a list of float64.
 Then, give the X and y to the machine learning algorithm.
+Enter any machine learning algorithm in the 'algorithm' parts of the code.
+```python
+algorithmscores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
+print 'Algorithm Trees',algorithmscores
+print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithmscores.mean()*100, algorithmscores.std() *100))
+```
