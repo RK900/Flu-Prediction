@@ -7,25 +7,29 @@ A to 1, T to 2, G to 3, and C to 4.
 Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
 Use the Biopython library to import a sequence ( a FASTA file format). For example:
 ```python
-sequence = Test_Seq.fasta 
-sequence = sequence.seq
+parent_fasta = parent.fasta 
+parent_seq = parent.seq
+
+child_fasta = parent.fasta 
+child_seq = child.seq
 ```
 Then encode it with the Encoding_v2 module:
 ```python
 from Encoding_v2 import encoding
-X = []
+parent = []
 for k in range(len(X0)):
-    encoded_X = encoding(X0[k])
-    X.append(encoded_X)
+    encoded_parent = encoding(parent_seq[k])
+    parent.append(encoded_parent)
     
-y = []
+child = []
 for l in range(len(y0)):
-    encoded_y = encoding(y0[l])
-    y.append(encoded_y)
+    encoded_child = encoding(child_seq[l])
+    child.append(encoded_child)
 ```
 This turns the sequence into a list of float64.
 Then, give the X and y to the machine learning algorithm.
 Enter any machine learning algorithm in the 'algorithm' parts of the code.
+
 ```python
 algorithmscores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
 print 'Algorithm Trees',algorithmscores
