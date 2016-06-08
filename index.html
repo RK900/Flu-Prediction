@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Flu-prediction by RK900</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Flu-prediction</h1>
+        <h2>Predicting Future Flu Virus Strains with Machine Learning </h2>
+        <a href="https://github.com/RK900/Flu-Prediction" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="flu-prediction" class="anchor" href="#flu-prediction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flu-Prediction</h1>
+
+<p>Predicting Future Flu Virus Strains with Machine Learning. This algorithm will predict how a future flu virus will look like (it's genetic sequence) based on trends present in previous flu seasons.</p>
+
+<h1>
+<a id="background-information" class="anchor" href="#background-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background Information</h1>
+
+<p>These programs predict future influenza virus strains. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
+A to 1, T to 2, G to 3, and C to 4.</p>
+
+<h1>
+<a id="to-use" class="anchor" href="#to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To use:</h1>
+
+<p>Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
+Use the Biopython library to import a sequence ( a FASTA file format). For example:</p>
+
+<div class="highlight highlight-source-python"><pre>parent_fasta <span class="pl-k">=</span> parent.fasta 
+parent_seq <span class="pl-k">=</span> parent.seq
+
+child_fasta <span class="pl-k">=</span> parent.fasta 
+child_seq <span class="pl-k">=</span> child.seq</pre></div>
+
+<p>Then encode it with the Encoding_v2 module:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> Encoding_v2 <span class="pl-k">import</span> encoding
+parent <span class="pl-k">=</span> []
+<span class="pl-k">for</span> k <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">len</span>(<span class="pl-c1">X0</span>)):
+    encoded_parent <span class="pl-k">=</span> encoding(parent_seq[k])
+    parent.append(encoded_parent)
+
+child <span class="pl-k">=</span> []
+<span class="pl-k">for</span> l <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">len</span>(y0)):
+    encoded_child <span class="pl-k">=</span> encoding(child_seq[l])
+    child.append(encoded_child)</pre></div>
+
+<p>This turns the sequence into a list of float64.
+Then, give the X and y to the machine learning algorithm.
+Enter any machine learning algorithm in the 'algorithm' parts of the code.</p>
+
+<div class="highlight highlight-source-python"><pre>algorithm_scores <span class="pl-k">=</span> cross_validation.cross_val_score(algorithm,<span class="pl-c1">X</span>,y,<span class="pl-v">cv</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
+<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm Trees<span class="pl-pds">'</span></span>,algorithm_scores
+<span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">"</span>Average Accuracy: <span class="pl-c1">%0.2f</span> (+/- <span class="pl-c1">%0.2f</span>)<span class="pl-pds">"</span></span> <span class="pl-k">%</span> (algorithm_scores.mean()<span class="pl-k">*</span><span class="pl-c1">100</span>, algorithm_scores.std() <span class="pl-k">*</span><span class="pl-c1">100</span>))</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/RK900/Flu-Prediction/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/RK900/Flu-Prediction/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/RK900/Flu-Prediction"></a> is maintained by <a href="https://github.com/RK900">RK900</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
