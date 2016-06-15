@@ -71,6 +71,11 @@ Enter any machine learning algorithm in the 'algorithm' parts of the code.</p>
 <div class="highlight highlight-source-python"><pre>algorithm_scores <span class="pl-k">=</span> cross_validation.cross_val_score(algorithm,<span class="pl-c1">X</span>,y,<span class="pl-v">cv</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
 <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm Trees<span class="pl-pds">'</span></span>,algorithm_scores
 <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">"</span>Average Accuracy: <span class="pl-c1">%0.2f</span> (+/- <span class="pl-c1">%0.2f</span>)<span class="pl-pds">"</span></span> <span class="pl-k">%</span> (algorithm_scores.mean()<span class="pl-k">*</span><span class="pl-c1">100</span>, algorithm_scores.std() <span class="pl-k">*</span><span class="pl-c1">100</span>))</pre></div>
+
+<h1>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h1>
+
+<p>Flu Prediction requires at least 8 GB or RAM. All input sequences must be of the same length and be in the FASTA file format.</p>
         </section>
 
         <aside id="sidebar">
