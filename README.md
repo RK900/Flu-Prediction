@@ -26,9 +26,9 @@ for l in range(len(y0)):
     encoded_child = encoding(child_seq[l])
     child.append(encoded_child)
 ```
-This turns the sequence into a list of float64.
+This turns the sequence into a list of float64's.
 Then, give the X and y to the machine learning algorithm.
-Enter any machine learning algorithm in the 'algorithm' parts of the code.
+Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRegressor, etc.) in the 'algorithm' parts of the code.
 
 ```python
 algorithm_scores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
