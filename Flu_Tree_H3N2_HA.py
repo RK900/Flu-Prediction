@@ -11,7 +11,21 @@ H3N2
 
 from Bio import SeqIO
 
-new = list(SeqIO.parse('file-HAprotein-H3N2.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-50.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-150.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-250.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-450.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-700.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-1000.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-300.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-350.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-550.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-750.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-HA-950.fasta','fasta'))
+
+
 #print len(new[13])
 X0 = []
 
@@ -91,3 +105,6 @@ ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
 
 
+# trying different methods of accuracy
+y_pred_rfr = rfr.predict(X_test)
+print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')

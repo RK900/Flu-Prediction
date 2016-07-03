@@ -11,7 +11,16 @@ H1N1 Na
 
 from Bio import SeqIO
 
-new = list(SeqIO.parse('file-NAprotein-H1N1.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-100.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-200.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-300.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-400.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-500.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-600.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-700.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-800.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-900.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
@@ -52,6 +61,10 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (dtrscores.mean()*100, dtrscores.s
 from sklearn import ensemble
 rfr = ensemble.RandomForestRegressor()
 rfr.fit(X,y)
+
+# trying different methods of accuracy
+y_pred_rfr = rfr.predict(X_test)
+print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
 
 rfrscores = cross_validation.cross_val_score(rfr,X,y,cv=2)
 print 'Random Forests',rfrscores
