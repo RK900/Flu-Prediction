@@ -6,7 +6,52 @@ Created on Sat Feb 20 21:49:22 2016
 """
 
 from Bio import SeqIO
-new = list(SeqIO.parse('file-HAprotein-H1N1.fasta','fasta'))
+'''
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-15-fastas.fasta','fasta'))
+records = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-fastas.fasta','fasta'))
+new7 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-fastas-3.fasta','fasta'))
+new4 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-20-fastas.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-100-fastas-2.fasta','fasta')) #100 HA fastas
+new6 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-NA-fastas.fasta','fasta'))#50 NA fastas
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-100-NA-fastas.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-200-NA-fastas.fasta','fasta'))
+new5 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-300-fastas.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-50.fasta','fasta'))
+'''
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-100.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-50.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-150.fasta','fasta'))
+
+'''
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-200.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-250.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-300.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-350.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-400.fasta','fasta'))
+
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-450.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-500.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-600.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-750.fasta','fasta'))
+'''
+'''
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-100.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-200.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-300.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-400.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-500.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-600.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-700.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-700-2.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-800.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-900.fasta','fasta'))
+'''
+#Use this one
+new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-HA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
@@ -49,6 +94,8 @@ print len(X[0]) == len(y[0])
 '''
 
 from sklearn import tree
+from sklearn import metrics
+
 dtr = tree.DecisionTreeRegressor()
 dtr.fit(X,y)
 
@@ -75,6 +122,7 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.s
 #print str.format('{0:.15f}',f)
 
 
+
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
 
 dtr.fit(X_train,y_train)
@@ -82,6 +130,10 @@ print dtr.score(X_test,y_test)
 
 rfr.fit(X_train,y_train)
 print rfr.score(X_test,y_test)
+# trying different methods of accuracy
+y_pred_rfr = rfr.predict(X_test)
+print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
+
 
 ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
@@ -111,5 +163,7 @@ print y[0][0]
 from Compare_Strains import compare_strains
 print compare_strains(X[0],y[0])
 '''
+
+
 
 
