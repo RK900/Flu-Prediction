@@ -149,6 +149,7 @@ uniform_average - Scores of all outputs are averaged with uniform weight
 '''
 y_pred_rfr = rfr.predict(X_test)
 print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
+print 'Random Forests MSE:', metrics.mean_squared_error(y_test,y_pred_rfr)
 
 y_pred_dtr = dtr.predict(X_test)
 print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted')
