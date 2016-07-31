@@ -130,13 +130,13 @@ print dtr.score(X_test,y_test)
 
 rfr.fit(X_train,y_train)
 print rfr.score(X_test,y_test)
-# trying different methods of accuracy
-y_pred_rfr = rfr.predict(X_test)
-print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
-
 
 ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
+
+# trying different methods of accuracy
+y_pred_rfr = rfr.predict(X_test)
+print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
 
 '''
 from sklearn import neighbors
