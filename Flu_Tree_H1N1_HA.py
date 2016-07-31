@@ -134,9 +134,45 @@ print rfr.score(X_test,y_test)
 ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
 
-# trying different methods of accuracy
+'''
+R^2 score (R2 score)
+How well the model fits a particular dataset
+Generally from 0 to 1 (1 is best)
+0 means X does not help predicting y
+negative values possible if model is that bad
+'''
+
+'''
+variance_weighted - Scores of all outputs are averaged, weighted by the 
+                        variances of each individual output
+uniform_average - Scores of all outputs are averaged with uniform weight
+'''
 y_pred_rfr = rfr.predict(X_test)
-print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
+print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='uniform_average')
+
+y_pred_dtr = dtr.predict(X_test)
+print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='uniform_average')
+
+y_pred_ext = ext.predict(X_test)
+print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='uniform_average')
+
+'''
+Gradient Boosting
+'''
+
+params = {'n_estimators': 199, 'max_depth': 20, 'min_samples_split': 10,
+          'learning_rate': 0.01, 'loss': 'ls'}
+          
+gbr = ensemble.GradientBoostingRegressor(**params)
+gbr.fit(X_train,y_train)
+
+#y_pred_gbr = gbr.predict(X_test)
+#print 'GBR R2 score:', metrics.r2_score(y_test,y_pred_gbr,multioutput='uniform_average')
+
+
+
+
+
 
 '''
 from sklearn import neighbors
