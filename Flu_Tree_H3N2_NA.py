@@ -11,12 +11,13 @@ NA
 '''
 
 from Bio import SeqIO
-
+'''
 new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-100.fasta','fasta'))
 new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-300.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-500.fasta','fasta'))
+'''
+new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H3N2-NA-500.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-700.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-1000.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H3N2-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
@@ -84,9 +85,15 @@ ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
 
 
-
+from sklearn import metrics
 # trying different methods of accuracy
 y_pred_rfr = rfr.predict(X_test)
-print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
+print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='uniform_average')
+
+y_pred_dtr = dtr.predict(X_test)
+print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='uniform_average')
+
+y_pred_ext = ext.predict(X_test)
+print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='uniform_average')
 
 
