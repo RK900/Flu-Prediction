@@ -35,8 +35,21 @@ This turns the sequence into a list of float64's.
 Then, give the X and y to the machine learning algorithm.
 Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRegressor, etc.) in the 'algorithm' parts of the code.
 
+Fitting the model: (substitute "algorithm" for any model of your choosing)
+```python
+algorithm.fit(X,y)
+algorithm.predict(new_X)
+```
+
+Computing accuracy using K-Fold cross-validation:
 ```python
 algorithm_scores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
 print 'Algorithm Trees',algorithm_scores
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithm_scores.mean()*100, algorithm_scores.std() *100))
+```
+
+Computing accuracy using Coefficient of determination (R^2 score):
+```python
+y_pred = algorithm.predict(X_test)
+print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='uniform_average')
 ```
