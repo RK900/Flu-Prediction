@@ -108,11 +108,11 @@ print ext.score(X_test,y_test)
 from sklearn import metrics
 # trying different methods of accuracy
 y_pred_rfr = rfr.predict(X_test)
-print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='uniform_average')
+print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
 
 y_pred_dtr = dtr.predict(X_test)
-print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='uniform_average')
+print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted')
 
 y_pred_ext = ext.predict(X_test)
-print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='uniform_average')
+print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted')
 
