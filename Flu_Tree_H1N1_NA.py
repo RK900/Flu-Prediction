@@ -11,7 +11,7 @@ H1N1 Na
 
 from Bio import SeqIO
 
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-100.fasta','fasta'))
+#new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-NA-100.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-200.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-300.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-400.fasta','fasta'))
@@ -20,7 +20,7 @@ new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-700.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-800.fasta','fasta'))
 #new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-900.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-1000.fasta','fasta'))
+new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
@@ -62,9 +62,6 @@ from sklearn import ensemble
 rfr = ensemble.RandomForestRegressor()
 rfr.fit(X,y)
 
-# trying different methods of accuracy
-y_pred_rfr = rfr.predict(X_test)
-print 'R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
 
 rfrscores = cross_validation.cross_val_score(rfr,X,y,cv=2)
 print 'Random Forests',rfrscores
@@ -79,7 +76,7 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.s
 
 #print str.format('{0:.15f}',f)
 
-
+from sklearn import metrics
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
 
 dtr.fit(X_train,y_train)
@@ -92,6 +89,14 @@ ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
 
 
+y_pred_rfr = rfr.predict(X_test)
+print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='uniform_average')
+
+y_pred_dtr = dtr.predict(X_test)
+print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='uniform_average')
+
+y_pred_ext = ext.predict(X_test)
+print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='uniform_average')
 
 
 
