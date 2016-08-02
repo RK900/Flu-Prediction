@@ -58,5 +58,5 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithm_scores.mean()*100, algo
 ###Computing accuracy using Coefficient of determination (R^2 score):
 ```python
 y_pred = algorithm.predict(X_test)
-print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='uniform_average')
+print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='variance_weighted')
 ```
