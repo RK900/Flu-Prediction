@@ -7,7 +7,7 @@ A to 1, T to 2, G to 3, and C to 4.
 MIT
 
 ###Dependencies
-Requires numpy, Biopython, and scikit-learn installed. Works on Python 2.
+Requires numpy, Biopython, and scikit-learn installed. Python 2 required.
 
 ##To use:
 Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
