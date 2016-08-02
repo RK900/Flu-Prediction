@@ -42,7 +42,7 @@ Then, give the X and y to the machine learning algorithm.
 Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRegressor, etc.) in the 'algorithm' parts of the code.
 
 ###Fitting the model
-Substitute "algorithm" for any model of your choosing
+Substitute "algorithm" for any model of your choosing.
 ```python
 algorithm.fit(X,y)
 algorithm.predict(new_X)
