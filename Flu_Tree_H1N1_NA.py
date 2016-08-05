@@ -11,16 +11,8 @@ H1N1 Na
 
 from Bio import SeqIO
 
-#new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-NA-100.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-200.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-300.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-400.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-500.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-600.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-700.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-800.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-NA-900.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-NA-1000.fasta','fasta'))
+
+new = list(SeqIO.parse('~/H1N1-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
