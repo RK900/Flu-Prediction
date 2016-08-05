@@ -6,52 +6,9 @@ Created on Sat Feb 20 21:49:22 2016
 """
 
 from Bio import SeqIO
-'''
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-15-fastas.fasta','fasta'))
-records = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-fastas.fasta','fasta'))
-new7 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-fastas-3.fasta','fasta'))
-new4 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-20-fastas.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-100-fastas-2.fasta','fasta')) #100 HA fastas
-new6 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-50-NA-fastas.fasta','fasta'))#50 NA fastas
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-100-NA-fastas.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-200-NA-fastas.fasta','fasta'))
-new5 = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Test-300-fastas.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-50.fasta','fasta'))
-'''
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-100.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-50.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-150.fasta','fasta'))
 
-'''
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-200.fasta','fasta'))
-
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-250.fasta','fasta'))
-
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-300.fasta','fasta'))
-
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-350.fasta','fasta'))
-
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-400.fasta','fasta'))
-
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-450.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-500.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-600.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/Working Strains/HA-750.fasta','fasta'))
-'''
-'''
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-100.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-200.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-300.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-400.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-500.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-600.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-700.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-700-2.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-800.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H1N1-HA-900.fasta','fasta'))
-'''
 #Use this one
-new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H1N1-HA-1000.fasta','fasta'))
+new = list(SeqIO.parse('~/H1N1-HA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
