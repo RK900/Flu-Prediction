@@ -11,13 +11,8 @@ NA
 '''
 
 from Bio import SeqIO
-'''
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-100.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-300.fasta','fasta'))
-'''
-new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H3N2-NA-500.fasta','fasta'))
-#new = list(SeqIO.parse('/Users/Rohan Koodli/Desktop/Data-Files/Flu-Strains/H3N2-NA-700.fasta','fasta'))
-new = list(SeqIO.parse('/Users/Rohan/Desktop/Data-Files/Flu-Strains/H3N2-NA-1000.fasta','fasta'))
+
+new = list(SeqIO.parse('/~/H3N2-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
