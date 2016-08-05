@@ -12,7 +12,7 @@ NA
 
 from Bio import SeqIO
 
-new = list(SeqIO.parse('/~/H3N2-NA-1000.fasta','fasta'))
+new = list(SeqIO.parse('~/H3N2-NA-1000.fasta','fasta'))
 
 #print len(new[13])
 X0 = []
