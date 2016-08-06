@@ -61,3 +61,9 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithm_scores.mean()*100, algo
 y_pred = algorithm.predict(X_test)
 print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='variance_weighted')
 ```
+
+###Computing accuracy using Mean Squared Error (MSE):
+```python
+y_pred = algorithm.predict(X_test)
+print 'Algorithm R2 score:', metrics.mean_squared_error(y_test,y_pred,multioutput='variance_weighted')
+```
