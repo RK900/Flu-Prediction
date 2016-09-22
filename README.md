@@ -4,18 +4,17 @@ These programs predict future influenza virus strains based on previous trends i
 A to 1, T to 2, G to 3, and C to 4.
 ###Talks
 Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyData</a> and PyGotham.
-###Updates
-Looking to add gradient boosting (XGBoost or scikit-learn).
+
 ###License
 MIT
 
 ###Dependencies
-Requires numpy, Biopython, and scikit-learn installed. Python 2 required.
+Requires Numpy, Biopython, and Scikit-learn installed. Python 2 required.
 
 ##To use:
 Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
 ###Reading in a FASTA with Biopython
-Use the Biopython library to import a sequence ( a FASTA file format). For example:
+Use the Biopython library to import a sequence (a FASTA file format). For example:
 ```python
 from Bio import SeqIO
 sequence = SeqIO.parse('myfasta.fasta','fasta')
