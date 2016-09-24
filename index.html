@@ -22,14 +22,23 @@
       <h1>
 <a id="flu-prediction" class="anchor" href="#flu-prediction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flu-Prediction</h1>
 
-<p>Predicting Future Flu Virus Strains with Machine Learning 
-These programs predict future influenza virus strains. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
+<p>These programs predict future influenza virus strains based on previous trends in flu mutations. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
 A to 1, T to 2, G to 3, and C to 4.</p>
+
+<h3>
+<a id="talks" class="anchor" href="#talks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Talks</h3>
+
+<p>Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyData</a> and PyGotham.</p>
 
 <h3>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
 
 <p>MIT</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>Python 2.7 or greater with Numpy, Biopython, and Scikit-learn libraries installed.</p>
 
 <h2>
 <a id="to-use" class="anchor" href="#to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To use:</h2>
@@ -39,7 +48,7 @@ A to 1, T to 2, G to 3, and C to 4.</p>
 <h3>
 <a id="reading-in-a-fasta-with-biopython" class="anchor" href="#reading-in-a-fasta-with-biopython" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reading in a FASTA with Biopython</h3>
 
-<p>Use the Biopython library to import a sequence ( a FASTA file format). For example:</p>
+<p>Use the Biopython library to import a sequence (a FASTA file format). For example:</p>
 
 <div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> Bio <span class="pl-k">import</span> SeqIO
 sequence <span class="pl-k">=</span> SeqIO.parse(<span class="pl-s"><span class="pl-pds">'</span>myfasta.fasta<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>fasta<span class="pl-pds">'</span></span>)
@@ -72,10 +81,19 @@ Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRe
 <h3>
 <a id="fitting-the-model" class="anchor" href="#fitting-the-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fitting the model</h3>
 
-<p>Substitute "algorithm" for any model of your choosing</p>
+<p>Substitute "algorithm" for any scikit-learn model of your choosing.</p>
 
-<div class="highlight highlight-source-python"><pre>algorithm.fit(<span class="pl-c1">X</span>,y)
-algorithm.predict(new_X)</pre></div>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn.algorithms <span class="pl-k">import</span> algorithm
+alg <span class="pl-k">=</span> algorithm()
+alg.fit(<span class="pl-c1">X</span>,y)
+alg.predict(new_X)</pre></div>
+
+<p>The algorithm I use in this project is a Random Forests Regressor model:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn.ensemble <span class="pl-k">import</span> RandomForestRegressor()
+rfr <span class="pl-k">=</span> RandomForestRegressor() <span class="pl-c"># Specify and parameters in the parenthesis</span>
+rfr.fit(<span class="pl-c1">X</span>,y)
+rfr.predict(new_X)</pre></div>
 
 <h3>
 <a id="computing-accuracy-using-k-fold-cross-validation" class="anchor" href="#computing-accuracy-using-k-fold-cross-validation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using K-Fold cross-validation</h3>
@@ -88,7 +106,13 @@ algorithm.predict(new_X)</pre></div>
 <a id="computing-accuracy-using-coefficient-of-determination-r2-score" class="anchor" href="#computing-accuracy-using-coefficient-of-determination-r2-score" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using Coefficient of determination (R^2 score):</h3>
 
 <div class="highlight highlight-source-python"><pre>y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
-<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm R2 score:<span class="pl-pds">'</span></span>, metrics.r2_score(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>uniform_average<span class="pl-pds">'</span></span>)</pre></div>
+<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm R2 score:<span class="pl-pds">'</span></span>, metrics.r2_score(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>variance_weighted<span class="pl-pds">'</span></span>)</pre></div>
+
+<h3>
+<a id="computing-accuracy-using-mean-squared-error-mse" class="anchor" href="#computing-accuracy-using-mean-squared-error-mse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using Mean Squared Error (MSE):</h3>
+
+<div class="highlight highlight-source-python"><pre>y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
+<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm R2 score:<span class="pl-pds">'</span></span>, metrics.mean_squared_error(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>variance_weighted<span class="pl-pds">'</span></span>)</pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/RK900/Flu-Prediction">Flu-prediction</a> is maintained by <a href="https://github.com/RK900">RK900</a>.</span>
