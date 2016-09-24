@@ -44,10 +44,19 @@ Then, give the X and y to the machine learning algorithm.
 Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRegressor, etc.) in the 'algorithm' parts of the code.
 
 ###Fitting the model
-Substitute "algorithm" for any model of your choosing.
+Substitute "algorithm" for any scikit-learn model of your choosing.
 ```python
-algorithm.fit(X,y)
-algorithm.predict(new_X)
+from sklearn.algorithms import algorithm
+alg = algorithm()
+alg.fit(X,y)
+alg.predict(new_X)
+```
+The algorithm I use in this project is a Random Forests Regressor model:
+```python
+from sklearn.ensemble import RandomForestRegressor()
+rfr = RandomForestRegressor() # Specify and parameters in the parenthesis
+rfr.fit(X,y)
+rfr.predict(new_X)
 ```
 
 ###Computing accuracy using K-Fold cross-validation
