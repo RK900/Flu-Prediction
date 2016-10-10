@@ -66,7 +66,7 @@ print 'Algorithm Trees',algorithm_scores
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithm_scores.mean()*100, algorithm_scores.std() *100))
 ```
 
-###Computing accuracy using Coefficient of determination (R^2 score):
+###Computing accuracy using Coefficient of determination (R<sup>2</sup> score):
 ```python
 y_pred = algorithm.predict(X_test)
 print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='variance_weighted')
