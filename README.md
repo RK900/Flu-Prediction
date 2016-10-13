@@ -1,6 +1,6 @@
 # Flu-Prediction
 [![Python27](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/download/releases/2.7/)
-[![License](https://img.shields.io/cocoapods/l/EasyQL.svg?style=flat)](https://github.com/LordDarkula/chess_py/blob/master/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/EasyQL.svg?style=flat)](https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt)
 [![Twitter](https://img.shields.io/badge/twitter-@RohanKoodli-blue.svg?style=flat)](http://twitter.com/RohanKoodli)
 
 Predicting Future Flu Virus Strains with Machine Learning. 
