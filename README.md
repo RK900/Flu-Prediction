@@ -1,4 +1,8 @@
 # Flu-Prediction
+[![Python27](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/download/releases/2.7/)
+[![License](https://img.shields.io/cocoapods/l/EasyQL.svg?style=flat)](https://github.com/LordDarkula/chess_py/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/badge/twitter-@LordDarkula-blue.svg?style=flat)](http://twitter.com/LordDarkula)
+
 Predicting Future Flu Virus Strains with Machine Learning. 
 These programs predict future influenza virus strains based on previous trends in flu mutations. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
 A to 1, T to 2, G to 3, and C to 4.
