@@ -63,7 +63,7 @@ rfr.fit(X,y)
 rfr.predict(new_X)
 ```
 
-###Computing accuracy using K-Fold cross-validation
+###Computing accuracy using K-Fold cross-validation:
 ```python
 from sklearn import cross_validation
 algorithm_scores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
