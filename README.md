@@ -50,7 +50,7 @@ Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRe
 ###Fitting the model
 Substitute "algorithm" for any scikit-learn model of your choosing.
 ```python
-from sklearn.algorithms import algorithm
+from sklearn.algorithms import algorithm()
 alg = algorithm()
 alg.fit(X,y)
 alg.predict(new_X)
@@ -65,19 +65,22 @@ rfr.predict(new_X)
 
 ###Computing accuracy using K-Fold cross-validation
 ```python
+from sklearn import cross_validation
 algorithm_scores = cross_validation.cross_val_score(algorithm,X,y,cv=2)
 print 'Algorithm Trees',algorithm_scores
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (algorithm_scores.mean()*100, algorithm_scores.std() *100))
 ```
 
-###Computing accuracy using Coefficient of determination (R<sup>2</sup> score):
+###Computing accuracy using R<sup>2</sup> (for linear models):
 ```python
+from sklearn import metrics
 y_pred = algorithm.predict(X_test)
 print 'Algorithm R2 score:', metrics.r2_score(y_test,y_pred,multioutput='variance_weighted')
 ```
 
 ###Computing accuracy using Mean Squared Error (MSE):
 ```python
+from sklearn import metrics
 y_pred = algorithm.predict(X_test)
-print 'Algorithm R2 score:', metrics.mean_squared_error(y_test,y_pred,multioutput='variance_weighted')
+print 'Algorithm mean squared error:', metrics.mean_squared_error(y_test,y_pred,multioutput='variance_weighted')
 ```
