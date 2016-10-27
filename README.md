@@ -4,8 +4,8 @@
 [![Twitter](https://img.shields.io/badge/twitter-@RohanKoodli-blue.svg?style=flat)](http://twitter.com/RohanKoodli)
 
 Predicting Future Flu Virus Strains with Machine Learning. 
-These programs predict future influenza virus strains based on previous trends in flu mutations. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
-A to 1, T to 2, G to 3, and C to 4.
+These programs predict future influenza virus strains based on previous trends in flu mutations.
+
 ###Talks
 Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyData</a> and PyGotham.
 
@@ -84,3 +84,10 @@ from sklearn import metrics
 y_pred = algorithm.predict(X_test)
 print 'Algorithm mean squared error:', metrics.mean_squared_error(y_test,y_pred,multioutput='variance_weighted')
 ```
+###Predicting Flu Strains:
+```python
+y_pred = algorithm.predict(X)
+print y_pred
+```
+The prediction output is a list of floats. Each number in the float corresponds to a base pair:
+A to 1, T to 2, G to 3, and C to 4.
