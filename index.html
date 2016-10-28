@@ -22,8 +22,12 @@
       <h1>
 <a id="flu-prediction" class="anchor" href="#flu-prediction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flu-Prediction</h1>
 
-<p>These programs predict future influenza virus strains based on previous trends in flu mutations. The prediction output is a list of floats. Each number in the float corresponds to a base pair:
-A to 1, T to 2, G to 3, and C to 4.</p>
+<p><a href="https://www.python.org/download/releases/2.7/"><img src="https://img.shields.io/badge/python-2.7-blue.svg" alt="Python27"></a>
+<a href="https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt"><img src="https://img.shields.io/cocoapods/l/EasyQL.svg?style=flat" alt="License"></a>
+<a href="http://twitter.com/RohanKoodli"><img src="https://img.shields.io/badge/twitter-@RohanKoodli-blue.svg?style=flat" alt="Twitter"></a></p>
+
+<p>Predicting Future Flu Virus Strains with Machine Learning. 
+These programs predict future influenza virus strains based on previous trends in flu mutations.</p>
 
 <h3>
 <a id="talks" class="anchor" href="#talks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Talks</h3>
@@ -83,7 +87,7 @@ Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRe
 
 <p>Substitute "algorithm" for any scikit-learn model of your choosing.</p>
 
-<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn.algorithms <span class="pl-k">import</span> algorithm
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn.algorithms <span class="pl-k">import</span> algorithm()
 alg <span class="pl-k">=</span> algorithm()
 alg.fit(<span class="pl-c1">X</span>,y)
 alg.predict(new_X)</pre></div>
@@ -96,23 +100,35 @@ rfr.fit(<span class="pl-c1">X</span>,y)
 rfr.predict(new_X)</pre></div>
 
 <h3>
-<a id="computing-accuracy-using-k-fold-cross-validation" class="anchor" href="#computing-accuracy-using-k-fold-cross-validation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using K-Fold cross-validation</h3>
+<a id="computing-accuracy-using-k-fold-cross-validation" class="anchor" href="#computing-accuracy-using-k-fold-cross-validation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using K-Fold cross-validation:</h3>
 
-<div class="highlight highlight-source-python"><pre>algorithm_scores <span class="pl-k">=</span> cross_validation.cross_val_score(algorithm,<span class="pl-c1">X</span>,y,<span class="pl-v">cv</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn <span class="pl-k">import</span> cross_validation
+algorithm_scores <span class="pl-k">=</span> cross_validation.cross_val_score(algorithm,<span class="pl-c1">X</span>,y,<span class="pl-v">cv</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
 <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm Trees<span class="pl-pds">'</span></span>,algorithm_scores
 <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">"</span>Average Accuracy: <span class="pl-c1">%0.2f</span> (+/- <span class="pl-c1">%0.2f</span>)<span class="pl-pds">"</span></span> <span class="pl-k">%</span> (algorithm_scores.mean()<span class="pl-k">*</span><span class="pl-c1">100</span>, algorithm_scores.std() <span class="pl-k">*</span><span class="pl-c1">100</span>))</pre></div>
 
 <h3>
-<a id="computing-accuracy-using-coefficient-of-determination-r2-score" class="anchor" href="#computing-accuracy-using-coefficient-of-determination-r2-score" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using Coefficient of determination (R^2 score):</h3>
+<a id="computing-accuracy-using-r2-for-linear-models" class="anchor" href="#computing-accuracy-using-r2-for-linear-models" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using R<sup>2</sup> (for linear models):</h3>
 
-<div class="highlight highlight-source-python"><pre>y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn <span class="pl-k">import</span> metrics
+y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
 <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm R2 score:<span class="pl-pds">'</span></span>, metrics.r2_score(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>variance_weighted<span class="pl-pds">'</span></span>)</pre></div>
 
 <h3>
 <a id="computing-accuracy-using-mean-squared-error-mse" class="anchor" href="#computing-accuracy-using-mean-squared-error-mse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computing accuracy using Mean Squared Error (MSE):</h3>
 
-<div class="highlight highlight-source-python"><pre>y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
-<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm R2 score:<span class="pl-pds">'</span></span>, metrics.mean_squared_error(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>variance_weighted<span class="pl-pds">'</span></span>)</pre></div>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> sklearn <span class="pl-k">import</span> metrics
+y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X_test</span>)
+<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Algorithm mean squared error:<span class="pl-pds">'</span></span>, metrics.mean_squared_error(y_test,y_pred,<span class="pl-v">multioutput</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>variance_weighted<span class="pl-pds">'</span></span>)</pre></div>
+
+<h3>
+<a id="predicting-flu-strains" class="anchor" href="#predicting-flu-strains" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Predicting Flu Strains:</h3>
+
+<div class="highlight highlight-source-python"><pre>y_pred <span class="pl-k">=</span> algorithm.predict(<span class="pl-c1">X</span>)
+<span class="pl-c1">print</span> y_pred</pre></div>
+
+<p>The prediction output is a list of floats. Each number in the float corresponds to a base pair:
+A to 1, T to 2, G to 3, and C to 4.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/RK900/Flu-Prediction">Flu-Prediction</a> is maintained by <a href="https://github.com/RK900">RK900</a>.</span>
