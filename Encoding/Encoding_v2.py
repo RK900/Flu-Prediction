@@ -6,9 +6,9 @@ Created on Fri Jan 29 18:49:40 2016
 """
 
 '''
-encoding bases
+Encoding DNA bases (adenine, thymine, guanine, cytosine)
 changing ints to floats for algorithm
-changes seq to str to list of floats to give to algorithm
+changes Bio.seq to str to list of floats to give to algorithm
 '''
 
 from Bio import SeqIO
@@ -16,7 +16,7 @@ from Bio import SeqIO
 
 def encoding(sequence):
     encoded = []
-    for i in sequence: #turns base pairs into numbers
+    for i in sequence: # turns base pairs into numbers
         if i == 'A':
             encoded.append('1')
         if i == 'T':
@@ -58,7 +58,7 @@ def entropy(labels):
     probability = [count / num_labels for count in Counter(labels).values()]            
     if num_labels <= 1:
         return 0
-    return sum(-probability * math.log(probability,2)) #this is the formula
+    return sum(-probability * math.log(probability,2)) # this is the formula
     
 
     
