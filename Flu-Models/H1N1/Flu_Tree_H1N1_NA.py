@@ -11,7 +11,7 @@ H1N1 Na
 
 from Bio import SeqIO
 
-
+# 1000 neuraminidase FASTA files from H1N1
 new = list(SeqIO.parse('~/H1N1-NA-1000.fasta','fasta'))
 
 #print len(new[13])
@@ -29,6 +29,7 @@ for j in range(1,len(new)):
     y0.append(new[i].seq)
     
 from Encoding_v2 import encoding
+# Changing A,C,T,G into 1,2,3,4
 
 X = []
 for k in range(len(X0)):
@@ -41,6 +42,7 @@ for l in range(len(y0)):
     y.append(encoded_y)
 
 
+# Using sklearn models for prediction
 from sklearn import tree
 dtr = tree.DecisionTreeRegressor()
 dtr.fit(X,y)
@@ -54,6 +56,7 @@ from sklearn import ensemble
 rfr = ensemble.RandomForestRegressor()
 rfr.fit(X,y)
 
+# Evaluating accuracy
 
 rfrscores = cross_validation.cross_val_score(rfr,X,y,cv=2)
 print 'Random Forests',rfrscores
@@ -89,7 +92,6 @@ print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput
 
 y_pred_ext = ext.predict(X_test)
 print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted')
-
 
 
 
