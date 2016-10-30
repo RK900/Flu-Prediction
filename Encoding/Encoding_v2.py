@@ -26,11 +26,11 @@ def encoding(sequence):
         if i == 'C':
             encoded.append('4')    
 
-    #print encoded prints fine
+    # print encoded prints fine
 
     seq = []
 
-    for i in range(len(encoded)):
+    for i in range(len(encoded)): # joins chunks of 15 digits together
         if i%15 == 0:
             a = encoded[i:i+15]
             a = ''.join(a)
@@ -39,7 +39,7 @@ def encoding(sequence):
         
     return seq
     
-def compare_strains(seq1,seq2):
+def compare_strains(seq1,seq2): # Compare 2 sequences for total number of mutations
     counter = 0
     nums = []
     for i in range(len(seq1)):
@@ -51,6 +51,7 @@ def compare_strains(seq1,seq2):
     
     return counter,nums
     
+# Entropy function
 import math
 from collections import Counter
 def entropy(labels):
