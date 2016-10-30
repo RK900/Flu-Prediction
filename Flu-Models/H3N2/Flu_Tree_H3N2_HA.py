@@ -10,7 +10,7 @@ H3N2
 '''
 
 from Bio import SeqIO
-
+# 1000 H3N2 hemagluttinin FASTA sequences
 new = list(SeqIO.parse('~/H3N2-HA-1000.fasta','fasta'))
 
 
@@ -28,6 +28,7 @@ y0 = []
 for j in range(1,len(new)):
     y0.append(new[i].seq)
     
+# Encoding
 from Encoding_v2 import encoding
 
 X = []
@@ -54,6 +55,7 @@ print len(X[0]) == len(y[0])
 #print test_length(X,y)
 '''
 
+# Fitting ML models and evaluating accuracy
 from sklearn import tree
 dtr = tree.DecisionTreeRegressor()
 dtr.fit(X,y)
