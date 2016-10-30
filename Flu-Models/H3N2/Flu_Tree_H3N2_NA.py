@@ -11,7 +11,7 @@ NA
 '''
 
 from Bio import SeqIO
-
+# 1000 H3N2 neuraminidase FASTA sequences
 new = list(SeqIO.parse('~/H3N2-NA-1000.fasta','fasta'))
 
 #print len(new[13])
@@ -29,7 +29,7 @@ for j in range(1,len(new)):
     y0.append(new[i].seq)
     
 from Encoding_v2 import encoding
-
+# Encoding
 X = []
 for k in range(len(X0)):
     encoded_X = encoding(X0[k])
@@ -40,7 +40,7 @@ for l in range(len(y0)):
     encoded_y = encoding(y0[l])
     y.append(encoded_y)
 
-
+# ML and accuracy
 from sklearn import tree
 dtr = tree.DecisionTreeRegressor()
 dtr.fit(X,y)
