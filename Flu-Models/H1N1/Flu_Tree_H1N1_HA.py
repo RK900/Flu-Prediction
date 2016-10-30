@@ -7,7 +7,8 @@ Created on Sat Feb 20 21:49:22 2016
 
 from Bio import SeqIO
 
-#Use this one
+# Use this one
+# 1000 H1N1 hemagluttinin FASTA sequences
 new = list(SeqIO.parse('~/H1N1-HA-1000.fasta','fasta'))
 
 #print len(new[13])
@@ -25,6 +26,7 @@ for j in range(1,len(new)):
     y0.append(new[i].seq)
     
 from Encoding_v2 import encoding
+# Encoding letters into numbers
 
 X = []
 for k in range(len(X0)):
@@ -50,6 +52,7 @@ print len(X[0]) == len(y[0])
 #print test_length(X,y)
 '''
 
+# Fitting ML models and evaluating accuracy
 from sklearn import tree
 from sklearn import metrics
 
