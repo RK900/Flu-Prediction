@@ -37,20 +37,6 @@ y = []
 for l in range(len(y0)):
     encoded_y = encoding(y0[l])
     y.append(encoded_y)
-'''
-print len(X[0])
-print len(y[298])
-
-a = [1,2,3,4,5]
-print len(a)
-
-from Compare_Strains import test_length
-
-print len(X[0])
-print len(y[0])
-print len(X[0]) == len(y[0])
-#print test_length(X,y)
-'''
 
 # Fitting ML models and evaluating accuracy
 from sklearn import tree
@@ -129,37 +115,6 @@ gbr = ensemble.GradientBoostingRegressor(**params)
 
 #y_pred_gbr = gbr.predict(X_test)
 #print 'GBR R2 score:', metrics.r2_score(y_test,y_pred_gbr,multioutput='uniform_average')
-
-
-
-
-
-
-'''
-from sklearn import neighbors
-knr = neighbors.KNeighborsRegressor()
-knr.fit(X,y)
-
-knrscores = cross_validation.cross_val_score(knr,X,y,cv=10)
-print knrscores
-'''
-'''
-X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y)#,test_size=0.5,random_state=10)
-
-dtr2 = tree.DecisionTreeRegressor()
-dtr2.fit(X_train,y_train)
-print dtr2.score(X_test,y_test)
-'''
-
-
-    
-'''    
-print X[0][0]
-print y[0][0]
-
-from Compare_Strains import compare_strains
-print compare_strains(X[0],y[0])
-'''
 
 
 
