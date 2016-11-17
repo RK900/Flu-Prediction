@@ -6,7 +6,7 @@ Created on Thu Mar 03 17:01:06 2016
 """
 
 '''
-H3N2
+H3N2 HA
 '''
 
 from Bio import SeqIO
@@ -40,20 +40,6 @@ y = []
 for l in range(len(y0)):
     encoded_y = encoding(y0[l])
     y.append(encoded_y)
-'''
-print len(X[0])
-print len(y[298])
-
-a = [1,2,3,4,5]
-print len(a)
-
-from Compare_Strains import test_length
-
-print len(X[0])
-print len(y[0])
-print len(X[0]) == len(y[0])
-#print test_length(X,y)
-'''
 
 # Fitting ML models and evaluating accuracy
 from sklearn import tree
@@ -79,8 +65,6 @@ ext.fit(X,y)
 extscores = cross_validation.cross_val_score(ext,X,y,cv=2)
 print 'Extra Trees',extscores
 print("Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.std() *100))
-
-#print str.format('{0:.15f}',f)
 
 
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
