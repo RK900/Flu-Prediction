@@ -5,6 +5,10 @@ Created on Sat Feb 20 21:49:22 2016
 @author: Rohan Koodli
 """
 
+'''
+H1N1 HA Flu Strain Prediction
+'''
+
 from Bio import SeqIO
 
 # Use this one

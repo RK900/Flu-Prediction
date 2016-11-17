@@ -6,8 +6,7 @@ Created on Sun Mar 06 13:46:30 2016
 """
 
 '''
-H3N2
-NA
+H3N2 NA Flu Strain Prediction
 '''
 
 from Bio import SeqIO
