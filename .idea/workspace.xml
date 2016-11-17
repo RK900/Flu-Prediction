@@ -26,21 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Flu_Tree_H1N1_HA.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flu_Tree_H1N1_NA.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Flu_Tree_H1N1_NA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,18 +39,28 @@
       <file leaf-file-name="Flu_Tree_H3N2_HA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="-600">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flu_Tree_H3N2_NA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Flu_Tree_H3N2_NA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flu_Tree_H1N1_HA.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -83,9 +83,9 @@
       <list>
         <option value="$PROJECT_DIR$/tests/test_fluStrain.py" />
         <option value="$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py" />
-        <option value="$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py" />
-        <option value="$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py" />
         <option value="$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py" />
+        <option value="$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py" />
+        <option value="$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py" />
       </list>
     </option>
   </component>
@@ -172,6 +172,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="H1N1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flu-Prediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flu-Prediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Encoding" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,8 +400,24 @@
     <entry file="file://$PROJECT_DIR$/tests/test_fluStrain.py" />
     <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="-360">
+          <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -395,23 +425,7 @@
     <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>

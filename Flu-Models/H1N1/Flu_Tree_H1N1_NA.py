@@ -14,15 +14,13 @@ from Bio import SeqIO
 # 1000 neuraminidase FASTA files from H1N1
 new = list(SeqIO.parse('~/H1N1-NA-1000.fasta','fasta'))
 
-#print len(new[13])
 X0 = []
 
 #adding to X and y
 
 for i in range(0,len(new)-1):
     X0.append(new[i].seq)
-    
-#print len(X0)
+
 
 y0 = []
 for j in range(1,len(new)):
@@ -69,7 +67,6 @@ extscores = cross_validation.cross_val_score(ext,X,y,cv=2)
 print 'Extra Trees',extscores
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.std() *100))
 
-#print str.format('{0:.15f}',f)
 
 from sklearn import metrics
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)

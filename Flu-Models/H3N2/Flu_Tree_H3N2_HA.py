@@ -13,16 +13,13 @@ from Bio import SeqIO
 # 1000 H3N2 hemagluttinin FASTA sequences
 new = list(SeqIO.parse('~/H3N2-HA-1000.fasta','fasta'))
 
-
-#print len(new[13])
 X0 = []
 
 #adding to X and y
 
 for i in range(0,len(new)-1):
     X0.append(new[i].seq)
-    
-#print len(X0)
+
 
 y0 = []
 for j in range(1,len(new)):
@@ -79,7 +76,8 @@ ext.fit(X_train,y_train)
 print ext.score(X_test,y_test)
 
 from sklearn import metrics
-# trying different methods of accuracy
+# different methods of accuracy
+
 y_pred_rfr = rfr.predict(X_test)
 print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
 
