@@ -14,7 +14,7 @@ Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyDa
 Flu-Prediction is available under the [MIT License](https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt).
 
 ### Dependencies
-Python 2.7 or greater with Numpy, Biopython, and Scikit-learn libraries installed.
+Python 2.7 with Numpy, Biopython, and Scikit-learn libraries installed.
 
 ## To use:
 Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
