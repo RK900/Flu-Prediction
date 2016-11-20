@@ -11,7 +11,7 @@ These programs predict future influenza virus strains based on previous trends i
 Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyData</a> and PyGotham.
 
 ### License
-MIT
+Flu-Prediction is available under the [MIT License](https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt).
 
 ### Dependencies
 Python 2.7 or greater with Numpy, Biopython, and Scikit-learn libraries installed.
