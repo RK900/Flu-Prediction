@@ -10,8 +10,10 @@ H3N2 NA Flu Strain Prediction
 '''
 
 from Bio import SeqIO
+import os
+path = os.getcwd()
 # 1000 H3N2 neuraminidase FASTA sequences
-new = list(SeqIO.parse('~/H3N2-NA-1000.fasta','fasta'))
+new = list(SeqIO.parse(path + '/H3N2-NA-1000.fasta','fasta'))
 
 X0 = []
 
