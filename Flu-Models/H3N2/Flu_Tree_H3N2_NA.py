@@ -27,6 +27,7 @@ for j in range(1,len(new)):
     
 from Encoding_v2 import encoding
 # Encoding
+
 X = []
 for k in range(len(X0)):
     encoded_X = encoding(X0[k])
