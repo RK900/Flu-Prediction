@@ -58,4 +58,4 @@ def entropy(labels):
     if num_labels <= 1:
         return(0)
     return(sum(-probability * math.log(probability,2))) # this is the formula
-    
+
