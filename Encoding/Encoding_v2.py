@@ -11,8 +11,6 @@ changing ints to floats for algorithm
 changes Bio.seq to str to list of floats to give to algorithm
 '''
 
-from Bio import SeqIO
-
 
 def encoding(sequence):
     encoded = []
@@ -37,7 +35,7 @@ def encoding(sequence):
             a = float(a)
             seq.append(a)
         
-    return seq
+    return(seq)
     
 def compare_strains(seq1,seq2): # Compare 2 sequences for total number of mutations
     counter = 0
@@ -49,7 +47,7 @@ def compare_strains(seq1,seq2): # Compare 2 sequences for total number of mutati
             counter += 1
             nums.append(i+1)
     
-    return counter,nums
+    return(counter,nums)
     
 # Entropy function
 import math
@@ -58,11 +56,6 @@ def entropy(labels):
     num_labels = len(labels)    
     probability = [count / num_labels for count in Counter(labels).values()]            
     if num_labels <= 1:
-        return 0
-    return sum(-probability * math.log(probability,2)) # this is the formula
+        return(0)
+    return(sum(-probability * math.log(probability,2))) # this is the formula
     
-
-    
-
-
-
