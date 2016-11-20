@@ -49,7 +49,7 @@ dtr.fit(X,y)
 
 from sklearn import cross_validation
 dtrscores = cross_validation.cross_val_score(dtr,X,y,cv=2)
-print 'Decision Trees',dtrscores
+print('Decision Trees',dtrscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (dtrscores.mean()*100, dtrscores.std() *100))
 
 from sklearn import ensemble
@@ -57,14 +57,14 @@ rfr = ensemble.RandomForestRegressor(n_estimators=20)
 rfr.fit(X,y)
 
 rfrscores = cross_validation.cross_val_score(rfr,X,y,cv=2)
-print 'Random Forests',rfrscores
+print('Random Forests',rfrscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (rfrscores.mean()*100, rfrscores.std() *100))
 
 ext = ensemble.ExtraTreesRegressor(n_estimators=3)
 ext.fit(X,y)
 
 extscores = cross_validation.cross_val_score(ext,X,y,cv=2)
-print 'Extra Trees',extscores
+print('Extra Trees',extscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.std() *100))
 
 
@@ -72,13 +72,13 @@ print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.s
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
 
 dtr.fit(X_train,y_train)
-print dtr.score(X_test,y_test)
+print(dtr.score(X_test,y_test))
 
 rfr.fit(X_train,y_train)
-print rfr.score(X_test,y_test)
+print(rfr.score(X_test,y_test))
 
 ext.fit(X_train,y_train)
-print ext.score(X_test,y_test)
+print(ext.score(X_test,y_test))
 
 '''
 R^2 score (R2 score)
@@ -94,14 +94,14 @@ variance_weighted - Scores of all outputs are averaged, weighted by the
 uniform_average - Scores of all outputs are averaged with uniform weight
 '''
 y_pred_rfr = rfr.predict(X_test)
-print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
-print 'Random Forests MSE:', metrics.mean_squared_error(y_test,y_pred_rfr)
+print('Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted'))
+print('Random Forests MSE:', metrics.mean_squared_error(y_test,y_pred_rfr))
 
 y_pred_dtr = dtr.predict(X_test)
-print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted')
+print('Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted'))
 
 y_pred_ext = ext.predict(X_test)
-print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted')
+print('Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted'))
 
 '''
 Gradient Boosting
@@ -115,7 +115,3 @@ gbr = ensemble.GradientBoostingRegressor(**params)
 
 #y_pred_gbr = gbr.predict(X_test)
 #print 'GBR R2 score:', metrics.r2_score(y_test,y_pred_gbr,multioutput='uniform_average')
-
-
-
-

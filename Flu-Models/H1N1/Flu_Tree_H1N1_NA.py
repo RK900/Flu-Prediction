@@ -47,7 +47,7 @@ dtr.fit(X,y)
 
 from sklearn import cross_validation
 dtrscores = cross_validation.cross_val_score(dtr,X,y,cv=2)
-print 'Decision Trees',dtrscores
+print('Decision Trees',dtrscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (dtrscores.mean()*100, dtrscores.std() *100))
 
 from sklearn import ensemble
@@ -57,14 +57,14 @@ rfr.fit(X,y)
 # Evaluating accuracy
 
 rfrscores = cross_validation.cross_val_score(rfr,X,y,cv=2)
-print 'Random Forests',rfrscores
+print('Random Forests',rfrscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (rfrscores.mean()*100, rfrscores.std() *100))
 
 ext = ensemble.ExtraTreesRegressor()
 ext.fit(X,y)
 
 extscores = cross_validation.cross_val_score(ext,X,y,cv=2)
-print 'Extra Trees',extscores
+print('Extra Trees',extscores)
 print("Average Accuracy: %0.2f (+/- %0.2f)" % (extscores.mean()*100, extscores.std() *100))
 
 
@@ -72,25 +72,23 @@ from sklearn import metrics
 X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
 
 dtr.fit(X_train,y_train)
-print dtr.score(X_test,y_test)
+print(dtr.score(X_test,y_test))
 
 rfr.fit(X_train,y_train)
-print rfr.score(X_test,y_test)
+print(rfr.score(X_test,y_test))
 
 ext.fit(X_train,y_train)
-print ext.score(X_test,y_test)
+print(ext.score(X_test,y_test))
 
 
 y_pred_rfr = rfr.predict(X_test)
-print 'Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted')
+print('Random Forests R2 score:', metrics.r2_score(y_test,y_pred_rfr,multioutput='variance_weighted'))
 
 y_pred_dtr = dtr.predict(X_test)
-print 'Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted')
+print('Decision Trees R2 score:', metrics.r2_score(y_test,y_pred_dtr,multioutput='variance_weighted'))
 
 y_pred_ext = ext.predict(X_test)
-print 'Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted')
-
-
+print('Extra Trees R2 score:', metrics.r2_score(y_test,y_pred_ext,multioutput='variance_weighted'))
 
 
 
