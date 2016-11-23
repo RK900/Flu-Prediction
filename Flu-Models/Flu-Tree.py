@@ -7,7 +7,7 @@ from Bio import SeqIO
 import os
 path = os.getcwd()
 
-seqs = list(SeqIO.parse(path + '\Flu-Data\H1N1\NA\H1N1-NA-1000.fasta','fasta'))
+seqs = list(SeqIO.parse(path + 'your-fasta.fasta','fasta'))
 
 X0 = []
 
@@ -42,3 +42,8 @@ rfrscores = cross_validation.cross_val_score(rfr, X, y, cv=2)
 print("Random Forests cross-validation score", rfrscores)
 print("Average Cross-Val Accuracy: %0.2f (+/- %0.2f)" % (rfrscores.mean()*100, rfrscores.std() *100))
 
+X_train,X_test,y_train,y_test = cross_validation.train_test_split(X,y,test_size=0.5,random_state=50)
+
+rfr.fit(X_train,y_train)
+y_predicted = rfr.predict(X_test)
+print('Random Forests MSE:', metrics.mean_squared_error(y_test,y_predicted))
