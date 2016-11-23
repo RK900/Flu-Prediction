@@ -13,7 +13,7 @@ from Bio import SeqIO
 import os
 path = os.getcwd()
 # 1000 H3N2 hemagluttinin FASTA sequences
-new = list(SeqIO.parse(path + '/H3N2-HA-1000.fasta','fasta'))
+new = list(SeqIO.parse(path + 'Flu-Data/H3N2/HA/H3N2-HA-1000.fasta','fasta'))
 
 X0 = []
 

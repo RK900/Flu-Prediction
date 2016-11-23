@@ -13,7 +13,7 @@ from Bio import SeqIO
 import os
 path = os.getcwd()
 # 1000 neuraminidase FASTA files from H1N1
-new = list(SeqIO.parse(path + '/H1N1-NA-1000.fasta','fasta'))
+new = list(SeqIO.parse(path + 'Flu_Data/H1N1/NA/H1N1-NA-1000.fasta','fasta'))
 
 X0 = []
 
