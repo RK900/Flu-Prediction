@@ -7,4 +7,4 @@ from Bio import SeqIO
 import os
 path = os.getcwd()
 print path
-seqs = list(SeqIO.parse(path + 'Flu_Data\H1N1\HA\H1N1-HA-1000.fasta','fasta'))
+seqs = list(SeqIO.parse(path + '\Flu_Data\H1N1\HA\H1N1-HA-1000.fasta','fasta'))
