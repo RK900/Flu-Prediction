@@ -4,12 +4,9 @@ A general Flu Prediction algorithm that can be used with H1N1 & H3N2 HA & NA pro
 '''
 
 from Bio import SeqIO
-import os
-path = os.getcwd()
 
-seqs = list(SeqIO.parse(path + '\Flu-Data\H1N1\NA\H1N1-NA-1000.fasta','fasta'))
-
-def predictFluSeq(seqs): #returns cross-val scores and MSE
+def predictFluSeq(seqs): # Seqs is the file path of your FASTA files
+    #returns cross-val scores and MSE
     X0 = []
 
     # adding to X and y
