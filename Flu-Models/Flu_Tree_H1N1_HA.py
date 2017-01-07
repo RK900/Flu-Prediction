@@ -11,9 +11,9 @@ H1N1 HA Flu Strain Prediction
 
 from Bio import SeqIO
 import os
-path = os.getcwd()
+path = os.getcwd().replace('Flu-Models','') + 'Flu-Data\H1N1\HA\HA-1000.fasta'
 # 1000 H1N1 hemagluttinin FASTA sequences
-new = list(SeqIO.parse(path + 'Flu_Data/H1N1/HA/H1N1-HA-1000.fasta','fasta'))
+new = list(SeqIO.parse(path,'fasta'))
 
 X0 = []
 
