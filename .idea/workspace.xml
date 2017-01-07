@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67c3854-6e23-44d0-8dda-996511777999" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Tree.py" afterPath="$PROJECT_DIR$/Flu-Models/Flu-Tree.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Alabama-01-2010.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-California-03-2010.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-California-04-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-California-07-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-California-49-2015.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-NorthCarolina-53-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-NorthCarolina-56-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-NorthCarolina-57-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Oregon-04-2011.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Utah-20-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Utah-55-2009.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Vermont-01-2010.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Virginia-07-2012.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Wisconsin-11-2013.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/A-Wyoming-01-2014.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-100.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-1000.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-250.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-50.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-500.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/HA/HA-750.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/NA/H1N1-NA-100.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/NA/H1N1-NA-1000.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/NA/H1N1-NA-200.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/NA/H1N1-NA-500.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H1N1/NA/H1N1-NA-700.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/HA/H3N2-HA-1000.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/HA/H3N2-HA-150.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/HA/H3N2-HA-50.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/HA/H3N2-HA-750.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/NA/H3N2-NA-100.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/NA/H3N2-NA-1000.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/NA/H3N2-NA-300.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/NA/H3N2-NA-500.fasta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Flu-Models/Flu-Data/H3N2/NA/H3N2-NA-700.fasta" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Flu-Prediction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,11 +57,11 @@
     <favorites_list name="Flu-Prediction" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Flu_Tree_H1N1_HA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
+            <state relative-caret-position="1400">
               <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
               <folding>
                 <element signature="e#131#152#0" expanded="true" />
@@ -137,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,10 +207,11 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Flu-Models/Flu-Tree.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.Flu">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -351,26 +386,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="145" y="27" width="1627" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="145" y="27" width="1627" height="1000" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19320327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21683967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25951558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25951558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -389,47 +424,188 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
+          <folding>
+            <element signature="e#131#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu-Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
+          <folding>
+            <element signature="e#131#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu-Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
+          <folding>
+            <element signature="e#131#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu-Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
+          <folding>
+            <element signature="e#131#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu-Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_HA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_NA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_fluStrain.py" />
-    <entry file="file://$PROJECT_DIR$/Encoding/Encoding_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Encoding/Encoding_v2.py" />
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_NA.py" />
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H1N1/Flu_Tree_H1N1_HA.py" />
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_NA.py" />
+    <entry file="file://$PROJECT_DIR$/Flu-Models/H3N2/Flu_Tree_H3N2_HA.py" />
     <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H3N2_NA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -448,7 +624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Flu-Models/Flu_Tree_H1N1_HA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
+        <state relative-caret-position="1400">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="100" />
           <folding>
             <element signature="e#131#152#0" expanded="true" />
