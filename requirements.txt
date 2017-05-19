@@ -1,0 +1,3 @@
+sklearn==0.17
+Biopython==1.67
+numpy==1.12.1
