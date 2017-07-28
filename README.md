@@ -52,7 +52,7 @@ Then, give the X and y to the machine learning algorithm.
 Enter any machine learning algorithm (eg, RandomForestsRegressor, DecisionTreeRegressor, etc.) in the 'algorithm' parts of the code.
 
 ### Fitting the model
-Substitute "algorithm" for any scikit-learn model of your choosing.
+Substitute `algorithm` for any scikit-learn model of your choosing.
 ```python
 from sklearn.algorithms import algorithm()
 alg = algorithm()
