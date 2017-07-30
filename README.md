@@ -1,5 +1,5 @@
 # Flu-Prediction
-[![GitHub release](https://img.shields.io/badge/release-v2.0-brightgreen.svg)](https://github.com/RK900/Flu-Prediction/releases)
+[![GitHub release](https://img.shields.io/badge/release-v2.1.1-brightgreen.svg)](https://github.com/RK900/Flu-Prediction/releases)
 [![Python27](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/download/releases/2.7/)
 [![Python34](https://img.shields.io/badge/python-3.4-yellow.svg)](https://www.python.org/download/releases/3.4.0/)
 [![License](https://img.shields.io/cocoapods/l/EasyQL.svg?style=flat)](https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt)
@@ -15,13 +15,15 @@ Check out my talks at <a href="https://www.youtube.com/watch?v=j325KOyV-hI">PyDa
 Flu-Prediction is available under the [MIT License](https://github.com/RK900/Flu-Prediction/blob/master/LICENSE.txt).
 
 ### Dependencies
-Python 2.7 with Numpy, Biopython, and Scikit-learn libraries installed.
+Python 2 or 3 with Numpy, Biopython, and Scikit-learn libraries installed.
 
 ## To use:
+Clone/download the repository. Install the dependencies by doing `pip install -r requirements.txt`.
+
 Input any HA (hemagglutinin) or NA (neuraminidase) flu protein sequence and it's corresponding child sequence into the program and it will output a predicted offspring of that specific flu strain.
 
 ### Reading in a FASTA file with Biopython
-Use the Biopython library to import a sequence (a FASTA file format). You can use any flu FASTA file of your choosing, or you can use the ones in the Flu-Data folder. The data in the Flu-Data folder contain a wide variety of flu FASTA files, from single flu strains up to 1000 flu strains, which are grouped by flu subtype and protein.
+Use the Biopython library to import a sequence (a FASTA file format). You can use any flu FASTA file of your choosing, or you can use the ones in the Flu-Data folder. The data in the Flu-Data folder contain a wide variety of flu FASTA files, from single flu strains up to 1000 flu strains, which are grouped by flu subtype and protein. Data was obtained from the [Influenza Research Database (IRD)](https://www.fludb.org/brc/influenza_sequence_search_segment_display.spg?method=ShowCleanSearch&decorator=influenza).
 
 ```python
 from Bio import SeqIO
